@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout design practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height:50vh;
+            display: flex;
+           
+        }
+        .left{
+            background-color: antiquewhite;
+            width: 25%;
+            
+        }
+        .right{
+            background-color: aquamarine;
+            width: 75%;
+        }
+
+        @media screen and (max-width:576px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .left{
+            width:100vw;  
+            height:10rem;
+        }
+        .right{
+            width: 100vw;
+            height: 20rem;
+        }
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="left"><h1>left</h1></div>
+        <div class="right"><h1>right</h1></div>
+    </section>
+</body>
+</html>
